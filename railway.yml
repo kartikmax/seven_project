@@ -1,0 +1,6 @@
+env: python
+build:
+  steps:
+    - run: pip install -r requirements.txt
+start:
+  web: python manage.py runserver 0.0.0.0:$PORT
